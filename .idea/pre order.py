@@ -4,11 +4,11 @@ def __init__(self,key):
     self.left  = None
     self.val = key
 
-    def printPostorder(root):
+    def printPreorder(root):
 
         if root:
-            printPostorder(root.left)
-            printPostorder(root.right),
+            printPreorder(root.left)
+            printPreorder(root.right),
             print(root.val)
 
 if __name__ == "__main__":
@@ -18,5 +18,5 @@ if __name__ == "__main__":
     root.left.left = Node(4)
     root.left.right = Node(5)
 
-    print "/n postorder traversal of binary tree is"
-    printPostorder(root)
+    print "/n preorder traversal of binary tree is"
+    printPreorder(root)
